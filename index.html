@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="PT">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>To do list</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
 
 
-        <div id="container">
+    <div id="container">
 
-            <div class="top_container"><h2>TO DO - LIST </h2></div>
-
-            <div class="footer">
-
-                <input id="input_bottom" type="text"  placeholder="Adicione uma tarefa." >
-                <button  id="botao_stilo" onclick="adicionar()">+</button>
-                
-
+        <div class="top_container">
+            <div style=" width: 50px; height: 50px; margin-right: 20px;">
+                <img style="width: 100%; min-height: 100%;" src="./assets/to-do-list.png" alt="todoList">
             </div>
-            
-            <div id="tarefas" >
-                
-                
-                
-            
-            </div>
-            <button id="remover_tudo" onclick="resetarr()">remover tudo </button>
-            
+            <h2>Simple to-do list</h2>
+        </div>
 
+        <div class="footer">
+
+            <input id="input_bottom" type="text" placeholder="  Adicione uma tarefa.">
+            <button id="botao_stilo" onclick="adicionar()">+</button>
 
 
         </div>
 
+        <div id="tarefas">
+
+
+
+
+
+        </div>
+        <button id="remover_tudo" onclick="resetarr()">Apagar todos</button>
+
+
+
+
+    </div>
 
 
 
@@ -55,6 +62,8 @@
 
 
 
-        <script src="script.js"></script>
-    </body>
+
+    <script src="script.js"></script>
+</body>
+
 </html>

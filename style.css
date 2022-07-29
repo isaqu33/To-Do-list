@@ -3,9 +3,11 @@ body{
     padding: 0;
     /* box-sizing: border-box; */
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: #E5E5E5;
+    background-color: #F9F8FF;
     font-family: sans-serif;
+    padding-top: 10px;
 
 }
 
@@ -15,7 +17,10 @@ body{
     align-items: center;
     width: 100%;
     max-width: 420px;
-    height: 100vh;
+    height: 90vh;
+    background-color: #DAECEB;
+    border-radius: 17px;
+    border: 1px solid #03113a19;
 
    
 }
@@ -23,8 +28,10 @@ body{
 .top_container{
     text-align: center;
     width: 100%;
-    background-color: #000000;
-    color: #FCA311;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #03113A;
     border-radius: 3px 3px 0 0;
     height: 60px;
     
@@ -32,7 +39,7 @@ body{
 }
 
 #tarefas{
-    /* background-color: teal; */
+     
     width: 100%;
     padding: 5px 0;
     display: flex;
@@ -41,13 +48,28 @@ body{
     flex: 1;
     margin-top: 60px;
     margin-bottom: 70px;
+    overflow-y: scroll;
+    
     
     
 
 }
+#tarefas::-webkit-scrollbar {
+    width: 1px;               /* width of the entire scrollbar */
+  }
+  
+  #tarefas::-webkit-scrollbar-track {
+    background: #03113a00;        /* color of the tracking area */
+  }
+  
+  #tarefas::-webkit-scrollbar-thumb {
+    background-color: #b8c4c3;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid #b8c4c3;  /* creates padding around scroll thumb */
+  }
 
 .footer{
-    background-color: #000000;
+    background-color: #daeceb;
     width: 100%;
     height: 60px;
     max-width: 100%;
@@ -55,11 +77,11 @@ body{
     align-items: center;
     border-radius: 0 0 3px 3px;
     max-width: 420px;
-    border-bottom: #FCA311 2px solid;
+    border-bottom: #03113a 1px solid;
 }
 
 .footer input{
-    background-color: #14213D;
+    background-color: #358886;
     border: none;
     font-size: 1.4rem;
     margin: 10px 0;
@@ -68,12 +90,16 @@ body{
     margin: 0 10px;
     color: white;
 }
+.footer input::placeholder{
+    
+    color: white;
+}
 
 .footer button{
-    background-color: teal;
+    background-color: #03113A;
     height: 40px;
     width: 40px;
-    border-radius: 100%;
+    border-radius: 50px;
     color: #f2e9e4;
     font-weight: bolder;
     font-size: 1.5rem;
@@ -98,10 +124,10 @@ body{
     /* text-align: center; */
     max-width: 410px;
     /* justify-content: space-between; */
-    width: 95%;
-    border: rgb(23, 0, 128) solid 2px;
+    width: 90%;
+    
     border-radius: 10px;
-    background-color: #14213D;
+    background-color: #00A9BC;
     color: #f2e9e4 ;
     justify-content: space-between;
     padding: 5px;
@@ -113,7 +139,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #14213D;
+    background-color: #00a9bc;
 }
 
 .label > input[type='checkbox']:checked  + div {
@@ -135,17 +161,28 @@ body{
 }
 
 .tarefa button:hover{
-    background-color: red ;
-    color: #FCA311;
-
+    color: red;
 }
 
 #botao_stilo:hover{
-    background-color:#14213D ;
-    color: #FCA311;
+    background-color:#f9f8ff ;
+    color: #03113A;
+    
 }
 #botao_stilo{
-    background-color: #FCA311;
-    color: #14213D;
+    background-color: #03113A;
+    color: #f9f8ff;
+}
+
+
+#remover_tudo{
+    padding: 5px;
+    border: none;
+    background-color: #03113a;
+    border-radius: 15px;
+    color: #DAECEB;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
 }
 
